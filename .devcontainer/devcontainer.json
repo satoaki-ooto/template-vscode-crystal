@@ -1,0 +1,20 @@
+{
+    "name": "Crystal on VSCode",
+    "dockerComposeFile": ["docker-compose.yml"],
+    "service": "app",
+    "workspaceFolder": "/azumino",
+
+      "settings": {
+        "terminal.integrated.automationShell.linux": "/usr/bin/bash"
+      },
+
+      "extensions": [
+        // crystal
+        "crystal-lang-tools.crystal-lang",
+        "veelenga.crystal-ameba",
+        "aliariff.auto-add-brackets",
+        "kevinkyang.auto-comment-blocks"
+      ],
+
+      "shutdownAction": "stopCompose"
+}

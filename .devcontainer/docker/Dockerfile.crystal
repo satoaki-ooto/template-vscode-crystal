@@ -1,0 +1,7 @@
+FROM crystallang/crystal:latest
+
+RUN apt update && \
+    apt upgrade -y && \
+    apt clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
+RUN shards install

@@ -1,0 +1,23 @@
+name: example
+version: 0.0.1
+
+authors:
+  - Jhon Dou <jhon-dou@example.com>
+
+description: |
+  Short description of temp
+
+dependencies:
+  pg:
+    github: will/crystal-pg
+    version: "~> 0.5"
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+    version: ~> 0.13.0
+  crystalline:
+    github: elbywan/crystalline
+    branch: main
+
+license: MIT
