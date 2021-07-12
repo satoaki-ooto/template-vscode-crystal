@@ -1,7 +1,13 @@
-FROM crystallang/crystal:latest
+FROM ubuntu:latest
+
+ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
-    apt upgrade -y && \
-    apt clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    apt upgrade -y
 
-RUN shards install
+RUN apt install -y curl git zsh make && \
+    curl -fsSL https://crystal-lang.org/install.sh | bash
+
+RUN shard install
+
+RUN apt clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

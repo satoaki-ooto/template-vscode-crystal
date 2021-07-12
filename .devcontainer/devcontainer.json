@@ -2,10 +2,11 @@
     "name": "Crystal on VSCode",
     "dockerComposeFile": ["docker-compose.yml"],
     "service": "app",
-    "workspaceFolder": "/azumino",
+    "workspaceFolder": "/workspace",
 
       "settings": {
-        "terminal.integrated.automationShell.linux": "/usr/bin/bash"
+        "terminal.integrated.automationShell.linux": "/usr/bin/bash",
+        "terminal.integrated.defaultProfile.linux": "bash"
       },
 
       "extensions": [
@@ -13,6 +14,8 @@
         "crystal-lang-tools.crystal-lang",
         "veelenga.crystal-ameba",
         "aliariff.auto-add-brackets",
+        "editorconfig.editorconfig",
+        "ms-azuretools.vscode-docker",
         "kevinkyang.auto-comment-blocks"
       ],
 

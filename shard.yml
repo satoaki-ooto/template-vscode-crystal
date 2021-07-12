@@ -18,6 +18,5 @@ development_dependencies:
     version: ~> 0.13.0
   crystalline:
     github: elbywan/crystalline
-    branch: main
 
 license: MIT

@@ -6,6 +6,8 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile.crystal
     container_name: crystal-env
+    environment:
+      TZ: Asia/Tokyo
     volumes:
       - ..:/workspace
       - ~/.gitconfig:/root/.gitconfig
